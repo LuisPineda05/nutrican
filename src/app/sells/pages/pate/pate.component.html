@@ -1,0 +1,58 @@
+<div class="page">
+    <div class="sidenav">
+        <app-sidenav></app-sidenav>
+    </div>
+    <div class="contents">
+        <div class="profile-header">
+            <div class="profile-header_left">
+                <svg (click)="goBack()" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 40 40" fill="none">
+                    <path d="M33.3333 18.3331V21.6665H13.3333L22.5 30.8331L20.1333 33.1998L6.93332 19.9998L20.1333 6.7998L22.5 9.16647L13.3333 18.3331H33.3333Z" fill="#1c5739"/>
+                </svg>
+                <h1 style="margin-top: 18px">Comida húmeda - Nutrican</h1>
+            </div>
+        </div>
+
+        <div class="flex-container">
+            <img src="assets/images/pate.png" alt="Profile Photo">
+            <div class="description">
+                <h3>Disfruta de la exquisita comida húmeda tipo paté de NutriCan, diseñada para satisfacer las necesidades nutricionales de tu perro. Esta deliciosa opción no solo ofrece un sabor irresistible, sino también beneficios significativos. Con una fórmula enriquecida con Ácidos Grasos Omega-3 y Omega-6, promueve un pelaje brillante y sedoso, realzando la apariencia saludable de tu mascota. Además, garantiza una digestión óptima y heces sólidas gracias a ingredientes de alta calidad y fácil digestión. Con un compromiso hacia el control de peso, NutriCan presenta una fórmula baja en grasas pero rica en nutrientes esenciales, contribuyendo al bienestar general y a una vida activa para tu perro.</h3>
+            </div>
+        </div>
+
+        <!-- Descripción de beneficios -->
+        <!-- Descripción de beneficios -->
+        <div class="section">
+            <div class="linea-ben">
+                <h2 class="section-title">Beneficios</h2>
+                <div (click)="toggleBenefits()" class="toggle-arrow">
+                    <!-- Flecha hacia abajo -->
+                    <svg *ngIf="!showBenefits" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                    <!-- Flecha hacia arriba -->
+                    <svg *ngIf="showBenefits" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="18 15 12 9 6 15"></polyline>
+                    </svg>
+                </div>
+            </div>
+            <div *ngIf="showBenefits" class="benefits-list">
+                <!-- Lista de beneficios -->
+                <ol type="I">
+                    <li *ngFor="let benefit of benefits">
+                        <span class="benefit-title">{{ benefit.title }}</span>
+                        <p>{{ benefit.description }}</p>
+                    </li>
+                </ol>
+            </div>
+        </div>
+
+
+        <!-- Contenido de tu archivo.html -->
+        <div class="content-container">
+            <input type="number" class="quantity-input" placeholder="Cantidad" id="quantityInput" [(ngModel)]="quantity" (input)="updateCost()">
+            <span class="cost-text"><strong>Costo:</strong> S/. {{ cost }}</span>
+            <button class="order-button" id="orderButton" (click)="order()">Ordenar</button>
+        </div>
+
+    </div>
+</div>

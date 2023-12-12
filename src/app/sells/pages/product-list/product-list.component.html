@@ -1,0 +1,70 @@
+<div class="page">
+  <div class="sidenav">
+    <app-sidenav></app-sidenav>
+  </div>
+  <div class="contents">
+    <div>
+      <h1>Nuestros Productos</h1>
+      <p>Encuntra lo que tu mascota necesita en nuestro catálogo.</p>
+
+
+      <mat-divider></mat-divider>
+      <mat-divider></mat-divider>
+
+      <div class="cards">
+        <!-- Utiliza *ngFor para crear una tarjeta para cada elemento de physiotherapists -->
+        <mat-card class="example-card">
+          <div class="card-content">
+            <img mat-card-md-image [src]="'assets/images/pate.png'" alt="Descripción de la imagen">
+            <div class="card-details">
+              <mat-card-title><span>Comida Húmeda</span></mat-card-title>
+              <mat-card-subtitle>
+                <span>Comida húmeda tipo paté.</span>
+              </mat-card-subtitle>
+              <mat-card-subtitle class="rating-section">
+                <mat-icon class="star-icon">star</mat-icon>
+                <span><strong>5.0 /5</strong></span>
+              </mat-card-subtitle>
+            </div>
+
+            <div class="card-button">
+              <div class="price-section">
+                <h4>S/. 10</h4>
+                <h5>/ 150 g</h5>
+              </div>
+              <button mat-raised-button color="primary" class="book-now-btn"  [routerLink]="['/pate']">
+                Ver info
+              </button>
+            </div>
+          </div>
+        </mat-card>
+        <mat-card class="example-card">
+          <div class="card-content">
+            <img mat-card-md-image [src]="'assets/images/croquetas.png'" alt="Descripción de la imagen">
+            <div class="card-details">
+              <mat-card-title><span>Galletas de hígado y avena</span></mat-card-title>
+              <mat-card-subtitle>
+                <span>Galletas artesanales naturales sin preservantes ni colorantes.</span>
+              </mat-card-subtitle>
+              <mat-card-subtitle class="rating-section">
+                <mat-icon class="star-icon">star</mat-icon>
+                <span><strong>5.0 /5</strong></span>
+              </mat-card-subtitle>
+            </div>
+
+            <div class="card-button">
+              <div class="price-section">
+                <h4>S/. 25</h4>
+                <h5>/ 200 g</h5>
+              </div>
+              <button mat-raised-button color="primary" class="book-now-btn"  [routerLink]="['/croqueta']">
+                Ver info
+              </button>
+            </div>
+          </div>
+        </mat-card>
+      </div>
+
+    </div>
+  </div>
+</div>

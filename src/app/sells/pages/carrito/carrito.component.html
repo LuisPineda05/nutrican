@@ -1,0 +1,61 @@
+<div class="page">
+    <div class="sidenav">
+        <app-sidenav></app-sidenav>
+    </div>
+    <div class="contents">
+        <div>
+            <h1>Tu Carrito de Compras</h1>
+            <p>Aquí están los items que has decidido comprar.</p>
+
+
+            <mat-divider></mat-divider>
+            <mat-divider></mat-divider>
+
+            <div class="cards">
+                <!-- Utiliza *ngFor para crear una tarjeta para cada elemento de physiotherapists -->
+                <mat-card class="example-card">
+                    <div class="card-content">
+                        <img mat-card-md-image [src]="'assets/images/pate.png'" alt="Descripción de la imagen">
+                        <div class="card-details">
+                            <mat-card-title><span>Comida Húmeda</span></mat-card-title>
+                            <mat-card-subtitle>
+                                <span>Comida húmeda tipo paté.</span>
+                            </mat-card-subtitle>
+                        </div>
+
+                        <div class="card-button">
+                            <div class="price-section">
+                                <h4>S/. {{cantidadPate * precioPate}} </h4>
+                                <h5>/ {{cantidadPate}} u</h5>
+                            </div>
+                        </div>
+                    </div>
+                </mat-card>
+                <mat-card class="example-card">
+                    <div class="card-content">
+                        <img mat-card-md-image [src]="'assets/images/croquetas.png'" alt="Descripción de la imagen">
+                        <div class="card-details">
+                            <mat-card-title><span>Galletas de hígado y avena</span></mat-card-title>
+                            <mat-card-subtitle>
+                                <span>Galletas artesanales naturales sin preservantes ni colorantes.</span>
+                            </mat-card-subtitle>
+                        </div>
+
+                        <div class="card-button">
+                            <div class="price-section">
+                                <h4>S/. {{cantdadCroque * precioCroque}} </h4>
+                                <h5>/ {{cantdadCroque}} u</h5>
+                            </div>
+                        </div>
+                    </div>
+                </mat-card>
+            </div>
+            <div class="content-container">
+                <span class="cost-text"><strong>Costo Total:</strong> S/. {{ cantdadCroque * precioCroque + cantidadPate * precioPate }}</span>
+                <input type="text" class="quantity-input" placeholder="Ubicación" id="quantityInput" [(ngModel)]="location">
+                <input type="text" class="quantity-input" placeholder="celular" id="quantity2Input" [(ngModel)]="celu">
+                <button class="order-button" id="orderButton" (click)="order()">Ordenar</button>
+            </div>
+        </div>
+    </div>
+</div>

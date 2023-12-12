@@ -1,0 +1,33 @@
+<main id="loginContainer" class="login-container">
+  <div class="login-section mat-elevation-z10">
+    <div class="login-form-container" >
+
+      <div class="login-logo">
+        <img src="assets/images/logo.jpeg" alt="Nutrican logo" class="logo-image" style="margin-right: 10px">
+        <span class="logo-text">Nutrican</span>
+      </div>
+
+      <span class="login-form-title">Iniciar Sesión</span>
+      <p>Inicia sesión con los datos que ingresaste en tu registro.</p>
+      <form [formGroup]="loginForm" (submit)="login()" class="login-form">
+
+        <mat-form-field appearance="fill" class="full-width">
+          <mat-label>E-mail</mat-label>
+          <input type="text" matInput formControlName="username" [(ngModel)]="username" name="username" required>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" class="full-width">
+          <mat-label>Contraseña</mat-label>
+          <input type="password" matInput formControlName="password" [(ngModel)]="password" name="password" required>
+        </mat-form-field>
+
+        <button [disabled]="!loginForm.valid" mat-raised-button color="primary" type="submit" class="login-button" (click)="login()">Entrar</button>
+
+        <a routerLink="/change" href="#" id="forgotPassword"><strong>Olvidé mi contraseña</strong></a>
+
+        <p id="signUp">You do not have an account?<a routerLink="/auth-registration" href="#"><strong> Resgitrarse</strong></a></p>
+      </form>
+    </div>
+  </div>
+</main>
+

@@ -1,0 +1,68 @@
+<div class="page">
+    <div class="sidenav">
+        <app-sidenav></app-sidenav>
+    </div>
+    <div class="contents">
+        <div class="profile-header">
+            <div class="profile-header_left">
+                <svg (click)="goBack()" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 40 40" fill="none">
+                    <path d="M33.3333 18.3331V21.6665H13.3333L22.5 30.8331L20.1333 33.1998L6.93332 19.9998L20.1333 6.7998L22.5 9.16647L13.3333 18.3331H33.3333Z" fill="#1c5739"/>
+                </svg>
+                <h1 style="margin-top: 18px">Galletas artesanales naturales sin preservantes ni colorantes.</h1>
+            </div>
+        </div>
+
+        <div class="flex-container">
+            <img src="assets/images/croquetas.png" alt="Profile Photo">
+            <div class="description">
+                <h3><strong>Análisis garantizado:</strong><br>
+
+                    Min. 10% Proteína<br>
+                    Min. 5% Grasa<br>
+                    Máx. 8% Cenizas<br>
+                    Máx. 15% Humedad<br>
+
+                    <strong>Fórmula:</strong><br>
+                    Harina de trigo, proteína animal, premezcla de vitaminas A, D y E y minerales (fuente de Selenio y Zinc orgánico).
+                </h3>
+            </div>
+        </div>
+
+        <!-- Descripción de beneficios -->
+        <!-- Descripción de beneficios -->
+        <div class="section">
+            <div class="linea-ben">
+                <h2 class="section-title">Beneficios</h2>
+                <div (click)="toggleBenefits()" class="toggle-arrow">
+                    <!-- Flecha hacia abajo -->
+                    <svg *ngIf="!showBenefits" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                    <!-- Flecha hacia arriba -->
+                    <svg *ngIf="showBenefits" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="18 15 12 9 6 15"></polyline>
+                    </svg>
+                </div>
+            </div>
+            <div *ngIf="showBenefits" class="benefits-list">
+                <!-- Lista de beneficios -->
+                <ol type="I">
+                    <li *ngFor="let benefit of benefits">
+                        <span class="benefit-title">{{ benefit.title }}</span>
+                        <p>{{ benefit.description }}</p>
+                    </li>
+                </ol>
+            </div>
+        </div>
+
+
+        <!-- Contenido de tu archivo.html -->
+        <div class="content-container">
+            <input type="number" class="quantity-input" placeholder="Cantidad" id="quantityInput" [(ngModel)]="quantity" (input)="updateCost()">
+            <span class="cost-text"><strong>Costo:</strong> S/. {{ cost }}</span>
+            <button class="order-button" id="orderButton" (click)="order()">Ordenar</button>
+        </div>
+
+
+    </div>
+</div>
