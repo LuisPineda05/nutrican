@@ -25,7 +25,8 @@ export class CarritoComponent implements OnInit{
     }
     order(): void {
         // Lógica para procesar la orden
-
+        localStorage.setItem('pate', JSON.stringify(0));
+        localStorage.setItem('croqueta', JSON.stringify(0));
         // Abre el cuadro de diálogo de confirmación
         const dialogRef = this.dialog.open(Dialog2Component, {
             width: '300px',

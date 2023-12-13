@@ -30,4 +30,6 @@ export class SidenavComponent implements OnInit {
 private checkWindowSize(): void {
     this.isExpanded = window.innerWidth > 1800; // Cambia isExpanded a false si el ancho es menor o igual a 800px
   }
+
+  protected readonly RouterLink = RouterLink;
 }
