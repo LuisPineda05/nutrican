@@ -1,0 +1,173 @@
+[debug] [2023-12-13T03:50:58.486Z] ----------------------------------------------------------------------
+[debug] [2023-12-13T03:50:58.488Z] Command:       /usr/local/bin/node /usr/local/bin/firebase init
+[debug] [2023-12-13T03:50:58.489Z] CLI Version:   13.0.1
+[debug] [2023-12-13T03:50:58.489Z] Platform:      darwin
+[debug] [2023-12-13T03:50:58.489Z] Node Version:  v20.10.0
+[debug] [2023-12-13T03:50:58.489Z] Time:          Tue Dec 12 2023 22:50:58 GMT-0500 (GMT-05:00)
+[debug] [2023-12-13T03:50:58.489Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-12-13T03:50:58.491Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-12-13T03:50:58.491Z] > authorizing via signed-in user (albertopineda200316@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/luisalbertopinedaugas/WebstormProjects/nutrican2
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-12-13T03:51:41.938Z] > refreshing access token with scopes: []
+[debug] [2023-12-13T03:51:41.939Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-12-13T03:51:41.939Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-12-13T03:51:42.171Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-12-13T03:51:42.171Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-12-13T03:51:42.185Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2023-12-13T03:51:42.812Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2023-12-13T03:51:42.812Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project nutrican-6e52d (Nutrican) 
+[info] 
+=== Hosting Setup
+[debug] [2023-12-13T03:51:44.837Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/nutrican-6e52d [none]
+[debug] [2023-12-13T03:51:45.125Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/nutrican-6e52d 200
+[debug] [2023-12-13T03:51:45.125Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/nutrican-6e52d {"projectId":"nutrican-6e52d","projectNumber":"107081393455","displayName":"Nutrican","name":"projects/nutrican-6e52d","resources":{"hostingSite":"nutrican-6e52d"},"state":"ACTIVE","etag":"1_53b9241a-2ed3-4dc8-98b4-979030e4fc92"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2023-12-13T03:52:28.178Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2023-12-13T03:52:28.891Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2023-12-13T03:52:28.891Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"10.7.1","browserURL":"https://www.gstatic.com/firebasejs/10.7.1/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/10.7.1/firebase.tgz"},"live":{"version":"10.7","browserURL":"https://www.gstatic.com/firebasejs/live/10.7/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/10.7/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/10.7.1/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/10.7.1/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/10.7.1/firebase-auth/cordova.js","functions":"https://www.gstatic.com/firebasejs/10.7.1/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/10.7.1/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/10.7.1/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/10.7.1/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/10.7.1/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/10.7.1/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/10.7.1/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.memory.js"}}
+[debug] [2023-12-13T03:52:28.892Z] Error: EACCES: permission denied, open '/Users/luisalbertopinedaugas/WebstormProjects/nutrican2/dist/index.html'
+    at Object.openSync (node:fs:581:18)
+    at Object.writeFileSync (node:fs:2342:35)
+    at Object.createFileSync (/usr/local/lib/node_modules/firebase-tools/node_modules/fs-extra/lib/ensure/file.js:63:6)
+    at Config.writeProjectFile (/usr/local/lib/node_modules/firebase-tools/lib/config.js:154:12)
+    at /usr/local/lib/node_modules/firebase-tools/lib/config.js:178:22
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async doSetup (/usr/local/lib/node_modules/firebase-tools/lib/init/features/hosting/index.js:177:9)
+    at async init (/usr/local/lib/node_modules/firebase-tools/lib/init/index.js:41:9)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-12-13T03:52:44.607Z] ----------------------------------------------------------------------
+[debug] [2023-12-13T03:52:44.609Z] Command:       /usr/local/bin/node /usr/local/bin/firebase init
+[debug] [2023-12-13T03:52:44.609Z] CLI Version:   13.0.1
+[debug] [2023-12-13T03:52:44.609Z] Platform:      darwin
+[debug] [2023-12-13T03:52:44.609Z] Node Version:  v20.10.0
+[debug] [2023-12-13T03:52:44.609Z] Time:          Tue Dec 12 2023 22:52:44 GMT-0500 (GMT-05:00)
+[debug] [2023-12-13T03:52:44.609Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-12-13T03:52:44.612Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-12-13T03:52:44.612Z] > authorizing via signed-in user (albertopineda200316@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/luisalbertopinedaugas/WebstormProjects/nutrican2
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-12-13T03:52:48.449Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2023-12-13T03:52:49.093Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2023-12-13T03:52:49.093Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project nutrican-6e52d (Nutrican) 
+[info] 
+=== Hosting Setup
+[debug] [2023-12-13T03:52:49.983Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/nutrican-6e52d [none]
+[debug] [2023-12-13T03:52:50.257Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/nutrican-6e52d 200
+[debug] [2023-12-13T03:52:50.258Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/nutrican-6e52d {"projectId":"nutrican-6e52d","projectNumber":"107081393455","displayName":"Nutrican","name":"projects/nutrican-6e52d","resources":{"hostingSite":"nutrican-6e52d"},"state":"ACTIVE","etag":"1_53b9241a-2ed3-4dc8-98b4-979030e4fc92"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2023-12-13T03:53:10.031Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2023-12-13T03:53:10.196Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2023-12-13T03:53:10.196Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"10.7.1","browserURL":"https://www.gstatic.com/firebasejs/10.7.1/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/10.7.1/firebase.tgz"},"live":{"version":"10.7","browserURL":"https://www.gstatic.com/firebasejs/live/10.7/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/10.7/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/10.7.1/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/10.7.1/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/10.7.1/firebase-auth/cordova.js","functions":"https://www.gstatic.com/firebasejs/10.7.1/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/10.7.1/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/10.7.1/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/10.7.1/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/10.7.1/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/10.7.1/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/10.7.1/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.memory.js"}}
+[debug] [2023-12-13T03:53:10.197Z] Error: EACCES: permission denied, open '/Users/luisalbertopinedaugas/WebstormProjects/nutrican2/dist/nutrican2/index.html'
+    at Object.openSync (node:fs:581:18)
+    at Object.writeFileSync (node:fs:2342:35)
+    at Object.createFileSync (/usr/local/lib/node_modules/firebase-tools/node_modules/fs-extra/lib/ensure/file.js:63:6)
+    at Config.writeProjectFile (/usr/local/lib/node_modules/firebase-tools/lib/config.js:154:12)
+    at /usr/local/lib/node_modules/firebase-tools/lib/config.js:178:22
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async doSetup (/usr/local/lib/node_modules/firebase-tools/lib/init/features/hosting/index.js:177:9)
+    at async init (/usr/local/lib/node_modules/firebase-tools/lib/init/index.js:41:9)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-12-13T03:56:15.788Z] ----------------------------------------------------------------------
+[debug] [2023-12-13T03:56:15.789Z] Command:       /usr/local/bin/node /usr/local/bin/firebase init
+[debug] [2023-12-13T03:56:15.790Z] CLI Version:   13.0.1
+[debug] [2023-12-13T03:56:15.790Z] Platform:      darwin
+[debug] [2023-12-13T03:56:15.790Z] Node Version:  v20.10.0
+[debug] [2023-12-13T03:56:15.790Z] Time:          Tue Dec 12 2023 22:56:15 GMT-0500 (GMT-05:00)
+[debug] [2023-12-13T03:56:15.790Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-12-13T03:56:15.792Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-12-13T03:56:15.792Z] > authorizing via signed-in user (albertopineda200316@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/luisalbertopinedaugas/WebstormProjects/nutrican2
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-12-13T03:56:22.506Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2023-12-13T03:56:23.198Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2023-12-13T03:56:23.199Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project nutrican-6e52d (Nutrican) 
+[info] 
+=== Hosting Setup
+[debug] [2023-12-13T03:56:24.298Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/nutrican-6e52d [none]
+[debug] [2023-12-13T03:56:24.563Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/nutrican-6e52d 200
+[debug] [2023-12-13T03:56:24.563Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/nutrican-6e52d {"projectId":"nutrican-6e52d","projectNumber":"107081393455","displayName":"Nutrican","name":"projects/nutrican-6e52d","resources":{"hostingSite":"nutrican-6e52d"},"state":"ACTIVE","etag":"1_53b9241a-2ed3-4dc8-98b4-979030e4fc92"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2023-12-13T03:56:34.619Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2023-12-13T03:56:34.805Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2023-12-13T03:56:34.806Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"10.7.1","browserURL":"https://www.gstatic.com/firebasejs/10.7.1/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/10.7.1/firebase.tgz"},"live":{"version":"10.7","browserURL":"https://www.gstatic.com/firebasejs/live/10.7/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/10.7/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/10.7.1/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/10.7.1/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/10.7.1/firebase-auth/cordova.js","functions":"https://www.gstatic.com/firebasejs/10.7.1/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/10.7.1/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/10.7.1/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/10.7.1/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/10.7.1/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/10.7.1/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/10.7.1/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.memory.js"}}
+[debug] [2023-12-13T03:56:34.807Z] Error: EACCES: permission denied, open '/Users/luisalbertopinedaugas/WebstormProjects/nutrican2/dist/index.html'
+    at Object.openSync (node:fs:581:18)
+    at Object.writeFileSync (node:fs:2342:35)
+    at Object.createFileSync (/usr/local/lib/node_modules/firebase-tools/node_modules/fs-extra/lib/ensure/file.js:63:6)
+    at Config.writeProjectFile (/usr/local/lib/node_modules/firebase-tools/lib/config.js:154:12)
+    at /usr/local/lib/node_modules/firebase-tools/lib/config.js:178:22
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async doSetup (/usr/local/lib/node_modules/firebase-tools/lib/init/features/hosting/index.js:177:9)
+    at async init (/usr/local/lib/node_modules/firebase-tools/lib/init/index.js:41:9)
+[error] 
+[error] Error: An unexpected error has occurred.
